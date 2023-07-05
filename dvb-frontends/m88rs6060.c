@@ -3237,8 +3237,7 @@ static int m88rs6060_ready(struct m88rs6060_dev *dev)
 	return ret;
 	
 }
-static int m88rs6060_probe(struct i2c_client *client,
-			   const struct i2c_device_id *id)
+static int m88rs6060_probe(struct i2c_client *client)
 {
 	struct m88rs6060_cfg *cfg = client->dev.platform_data;
 	struct m88rs6060_dev *dev;
